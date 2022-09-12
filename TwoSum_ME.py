@@ -12,7 +12,9 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 # num[i] >= 0 for checking positive numbers
 # num[i] < 0 for checking negative numbers
 # Why exit not break: break will break the current loop only, so inner loop with break but not the outer loop, so exit
-
+# This is the brute force approach.
+# Time Complexity : O(n^2)
+# Space Complexity: O(1). The space required does not depend on the size of the input array, so only constant space is used.
 class Solution(object):
     def twoSum(self, nums, target):
         """

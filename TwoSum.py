@@ -7,7 +7,9 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 '''
 # Logic is to check second number as target - first number
-
+# This is the brute force approach.
+# Time Complexity : O(n^2)
+# Space Complexity: O(1). The space required does not depend on the size of the input array, so only constant space is used.
 class Solution:
     def twoSum(self, nums, target):
         for i in range(len(nums)):
