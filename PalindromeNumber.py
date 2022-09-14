@@ -13,5 +13,4 @@ class Solution(object):
 
 obj = Solution()
 number = 100021
-# print(obj.get_length(number))
 print(obj.isPalindrome(number))
