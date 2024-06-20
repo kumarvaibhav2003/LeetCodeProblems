@@ -1,4 +1,4 @@
-# Python program to sort an integer arrat using bubble sort
+# Python program to sort an integer array using bubble sort
 
 def bubble_sort(arr):
     n = len(arr)

@@ -17,22 +17,17 @@ Constraints:
 0 <= strs[i].length <= 200
 strs[i] consists of only lowercase English letters.
 """
-def longestCommonPrefix(strs):
-    """
-    :type strs: List[str]
-    :rtype: str
-    """
-    prefix = []
-    num = len(strs)
-    for x in zip(*strs):
-        # print(set(x))
-        if len(set(x)) == 1:
-            # print(x)
-            prefix.append(x[0])
-        else:
-            break
-    return "".join(prefix)
-    # return prefix
+class Solution:
+    def longestCommonPrefix(self, v: list[str]) -> str:
+        res = ""
+        v = sorted(v)
+        # print(v)
+        for i in range(min(len(v[0]),len(v[-1]))):
+            if v[0][i] != v[-1][i]:
+                return res
+            res += v[0][i]
+        return res
 
+obj = Solution()
 strs = ["flower","flow","flought"]
-print(longestCommonPrefix(strs))
+print(obj.longestCommonPrefix(strs))

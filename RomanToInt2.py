@@ -1,4 +1,4 @@
-# Python program to convert Roman to Integers
+    # Python program to convert Roman to Integers
 """
 Split the Roman Numeral string into Roman Symbols (character).
 Convert each symbol of Roman Numerals into the value it represents.
@@ -61,4 +61,6 @@ def romanToInt(str):
     return res
 
 
-print(romanToInt("MCMXCIV"))
+# print(romanToInt("XCIV"))
+
+print(romanToInt("VXIID"))
